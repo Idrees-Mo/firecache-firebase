@@ -1,0 +1,7 @@
+<h1>My Firecache Todo list!</h1>
+
+<div *ngIf="$todos | async as todos">
+  <div *ngFor="let todo of todos">
+    {{todos | json}}
+  </div>
+</div>
